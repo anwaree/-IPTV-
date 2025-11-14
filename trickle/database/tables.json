@@ -1,0 +1,35 @@
+[
+  {
+    "name": "iptv_server",
+    "fields": [
+      {
+        "name": "m3uUrl",
+        "type": "text",
+        "description": "\u0631\u0627\u0628\u0637 M3U \u0644\u0644\u0633\u064a\u0631\u0641\u0631",
+        "options": null
+      },
+      {
+        "name": "channels",
+        "type": "number",
+        "description": "\u0639\u062f\u062f \u0627\u0644\u0642\u0646\u0648\u0627\u062a",
+        "options": null
+      },
+      {
+        "name": "quality",
+        "type": "text",
+        "description": "\u062c\u0648\u062f\u0629 \u0627\u0644\u0628\u062b",
+        "options": [
+          "HD",
+          "FHD",
+          "4K"
+        ]
+      },
+      {
+        "name": "expiryDate",
+        "type": "text",
+        "description": "\u062a\u0627\u0631\u064a\u062e \u0627\u0646\u062a\u0647\u0627\u0621 \u0627\u0644\u0635\u0644\u0627\u062d\u064a\u0629",
+        "options": null
+      }
+    ]
+  }
+]

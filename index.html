@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرفرات IPTV المجانية</title>
+    <meta name="description" content="احصل على روابط سيرفرات IPTV المجانية">
+    <meta name="keywords" content="IPTV, سيرفرات مجانية, روابط IPTV">
+    <meta property="og:title" content="سيرفرات IPTV المجانية">
+    <meta property="og:description" content="احصل على روابط سيرفرات IPTV المجانية">
+    <meta name="twitter:title" content="سيرفرات IPTV المجانية">
+    <meta name="twitter:description" content="احصل على روابط سيرفرات IPTV المجانية">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #f0f1ff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn {
+            @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 cursor-pointer;
+        }
+        
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white hover:opacity-90 shadow-lg hover:shadow-xl;
+        }
+        
+        .btn-success {
+            @apply bg-[var(--success-color)] text-white hover:opacity-90;
+        }
+        
+        .card {
+            @apply bg-white rounded-2xl shadow-xl border border-[var(--border-color)] p-8;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/CountdownButton.js"></script>
+    <script type="text/babel" src="components/ServerDisplay.js"></script>
+    <script type="text/babel" src="components/AdDisplay.js"></script>
+    <script type="text/babel" src="components/Alert.js"></script>
+    <script type="text/babel" src="components/AdminLink.js"></script>
+    <script type="text/babel" src="utils/localDB.js"></script>
+    <script type="text/babel" src="utils/servers.js"></script>
+    <script type="text/babel" src="utils/adManager.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
